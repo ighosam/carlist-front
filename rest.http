@@ -1,0 +1,67 @@
+GET http://localhost:1337/api/hotels
+content-Type: application/json
+
+###
+
+POST http://localhost:1337/api/auth/local/register
+content-Type: application/json
+
+{
+ "username": "sam11",
+  "email": "sam238443@gmail11.com",
+  "password": "osamary"
+
+}
+
+###
+
+POST http://localhost:1337/api/auth/local
+content-Type: application/json
+
+{
+"identifier": "sam231",
+"password": "anything"
+}
+
+
+###
+PUT http://localhost:1337/api/hotels/1
+content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzExNzg0NDEyLCJleHAiOjE3MTQzNzY0MTJ9.6zBTlO3TS_lcVz3Eww1rD_j-YoZGgexk__HsQfnppTc
+
+{
+  "data": {
+    "name":"Besty Hotel"
+  }
+}
+
+###
+
+GET http://localhost:1337/api/users/me
+content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNzEwNzMzOTQ4LCJleHAiOjE3MTMzMjU5NDh9.9beYHlbCyS4zRV0G77cawoBnfsGXGBSX0xVPig4HAAQ
+
+###
+
+delete http://localhost:1337/api/upload/files/7
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzEwODEzMjYwLCJleHAiOjE3MTM0MDUyNjB9.iQW-KoDp9-pHtfOfbxFE8EAjQa9GFY-qiPcdGvAlZy0
+
+###
+
+GET http://localhost:1337/api/upload/files?populate=*
+content-type: application/json
+
+###
+
+GET http://localhost:1337/api/users
+content-type: application/json
+
+###
+
+post  http://localhost:1337/api/auth/refreshToken
+content-type: application/json
+
+{
+"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0a3YiOjc4MCwiaWF0IjoxNzEzNDYzODkyLCJleHAiOjE3MTM1NTAyOTIsInN1YiI6IjM0In0.XdiF82pACUJ1Fm8zqOGFgDZrgCe6LzeZNUvDVB7rH5M"
+}
