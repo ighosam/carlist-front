@@ -26,4 +26,4 @@ jobs:
         script: |
           cd ${{secrets.SRC_DIR}}
           git pull origin main
-          npm run start
+      
