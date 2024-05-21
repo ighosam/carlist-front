@@ -1,9 +1,9 @@
-GET http://localhost:1337/api/hotels
+GET http://strapi.okidaro.com:1337/api/hotels
 content-Type: application/json
 
 ###
 
-POST http://localhost:1337/api/auth/local/register
+POST http://strapi.okidaro.com:1337/api/auth/local/register
 content-Type: application/json
 
 {
